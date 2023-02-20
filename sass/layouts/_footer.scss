@@ -1,0 +1,115 @@
+/* !FOOTTER */
+.footer{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--dark-text-color);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer .logo {
+  margin: 0;
+}
+
+.footer__span {
+  color: var(--background-color);
+}
+
+.footer__text {
+  width: 264px;
+
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: var(--accent-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer-subtext {
+  margin: 0 0 16px 0;
+  color: var(--white-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.socials-footer {
+  margin-right: auto;
+  margin-left: 120px;
+}
+
+.socials-footer__list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.socials-footer__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  background-color: var(--success-color);
+}
+}
+
+.subscribe-footer__label{
+  display: block;
+    margin: 0 0 16px 0;
+  color: var(--white-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.subscribe-footer__block {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.subscribe-footer__input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+  font-size: 12px;
+  line-height: calc(24 / 12);
+
+  &::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+}
+
+.subscribe-footer__btn {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+
+  padding: 8px 24px;
+  border-color: transparent;
+  border-radius: 4px;
+  background: var(--iris-color);
+  color: var(--white-color);
+  font-weight: 500;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  background-color: var(--pressed-hover-color);
+}
+}

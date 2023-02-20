@@ -1,0 +1,25 @@
+:root {
+  /* *font */
+  --logo-font: "Raleway", sans-serif;
+  --main-font: "Roboto", sans-serif;
+
+  /* *color */
+  --iris-color: #4d5ae5;
+  --dark-text-color: #2e2f42;
+  --background-color: #f4f4fd;
+  --body-text-color: #434455;
+  --white-color: #ffffff;
+  --accent-color: #e7e9fc;
+  --pressed-hover-color: #404bbf;
+  --success-color: #31d0aa;
+  --subtle-color: #8e8f99;
+
+  /* *flex */
+  --indent: 24px;
+  --items: 4;
+}
+.list-set {
+  display: flex;
+  gap: var(--indent);
+}
+

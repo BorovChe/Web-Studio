@@ -1,0 +1,111 @@
+/* !PORFOLIO */
+.portfolio {
+  padding-top: 96px;
+}
+
+.list-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.filtr-btn {
+  max-width: 116px;
+  max-height: 48px;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-color);
+
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--iris-color);
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  border-color: transparent;
+  background-color: var(--pressed-hover-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
+.portfolio-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-set__item {
+  flex-basis: calc((100% - 24px * 2) / 3);
+  min-width: 360px;
+  min-height: 420px;
+}
+
+.portfolio__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+  &:hover .overlay,
+  &:focus .overlay {
+  transform: translateY(0);
+}
+}
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}
+
+.overlay__text {
+  position: absolute;
+  top: 40px;
+  left: 32px;
+  width: 296px;
+  margin: 0;
+  color: var(--background-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.card-name {
+  margin: 0;
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.portfolio__subtitle {
+  margin-bottom: 8px;
+  color: var(--dark-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
