@@ -1,12 +1,22 @@
 /* !CUSTOMERS SECTION */
 .customers__list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
   justify-content: center;
+
+  @media screen and (min-width:768px){
+     gap: 24px;
+  }
 }
 .customers__item {
-  min-width: 168px;
+  min-width: 190px;
   min-height: 88px;
+
+  @media screen and (min-width:768px) {
+      min-width: 168px;
+  min-height: 88px;
+  }
 }
 
 .customers__link {
@@ -35,4 +45,8 @@
 .customers__icon {
   fill: var(--subtle-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width:768px) {
+    width: 104px;
+  }
 }
