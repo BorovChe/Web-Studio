@@ -2,11 +2,12 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 72px;
   justify-content: center;
 
   @media screen and (min-width:768px){
-     gap: 24px;
+     column-gap: 24px;
   }
 }
 .customers__item {
