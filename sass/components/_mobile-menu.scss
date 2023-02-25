@@ -64,9 +64,12 @@
 
 .socials-mobile {
   display: flex;
-  gap: 56px;
+  gap: 16px;
   justify-content: left;
-  width: 328px;
+
+  @media screen and (min-width:428px) {
+    gap: 56px;
+  }
 }
 
 .socials-mobile__item{
@@ -81,10 +84,14 @@ width: 100%;
   max-width: 337px;
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 40px;
-  line-height: calc(40 / 36);
+  font-size: 28px;
+  line-height: calc(40 / 28);
   color: var(--iris-color);
+
+  @media screen and (min-width:428px) {
+    font-size: 36px;
+    line-height: calc(40 / 36);
+  }
 }
 
 .phone__item {

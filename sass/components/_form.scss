@@ -96,10 +96,16 @@
 
 .text-order {
   color: #757575;
-  font-size: 12px;
-  line-height: calc(16 / 12);
+  font-size: 10px;
+  line-height: calc(16 / 10);
   letter-spacing: 0.04em;
   user-select: none;
+
+  @media screen and (min-width:428px) {
+    font-size: 12px;
+    line-height: calc(16 / 12)
+  }
+
 }
 
 .link-order {

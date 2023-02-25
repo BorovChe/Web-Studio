@@ -2,17 +2,25 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 16px;
+  column-gap: 10px;
   row-gap: 72px;
   justify-content: center;
+
+  @media screen and (min-width:428px) {
+    column-gap: 16px;
+  }
 
   @media screen and (min-width:768px){
      column-gap: 24px;
   }
 }
 .customers__item {
-  min-width: 190px;
+  min-width: 140px;
   min-height: 88px;
+
+  @media screen and (min-width:428px) {
+  min-width: 190px;
+  }
 
   @media screen and (min-width:768px) {
       min-width: 168px;
