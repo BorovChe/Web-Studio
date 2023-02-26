@@ -534,13 +534,6 @@ body {
   background: var(--pressed-hover-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .address {
-    margin-top: 24px;
-    margin-bottom: 10px;
-  }
-}
-
 .contact {
   display: flex;
   gap: 40px;
@@ -594,8 +587,8 @@ body {
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: var(--dark-text-color);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/imagesmain/hero/dark-bg_mob@1x.jpg);
   background-position: center;
@@ -618,8 +611,16 @@ body {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/imagesmain/hero/dark-bg_tab@2x.jpg);
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 108px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/imagesmain/hero/people-office_desk@1x.jpg);
   }
 }
@@ -640,10 +641,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
     max-width: 496px;
     font-size: 56px;
     line-height: 1.0714285714;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    margin-bottom: 48px;
   }
 }
 
@@ -952,7 +958,7 @@ body {
 }
 
 .socials-footer {
-  padding: 72px 0;
+  margin: 72px 0;
 }
 @media screen and (min-width: 768px) {
   .socials-footer {

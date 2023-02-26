@@ -4,8 +4,8 @@
 
   margin-right: auto;
   margin-left: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: var(--dark-text-color);
 
   background-image: linear-gradient(
@@ -29,6 +29,7 @@
 }
 
   @media screen and (min-width: 428px) {
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -46,7 +47,15 @@
 }
   }
 
+  @media screen and (min-width:768px) {
+      padding-top: 112px;
+  padding-bottom: 108px;
+  }
+
   @media screen and (min-width: 1200px) {
+  padding-top: 188px;
+  padding-bottom: 188px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -74,10 +83,14 @@
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
     max-width: 496px;
     font-size: 56px;
     line-height: calc(60 / 56);
+  }
+
+  @media screen and (min-width:1200px) {
+        margin-bottom: 48px;
   }
 }
 
